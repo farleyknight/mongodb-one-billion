@@ -172,7 +172,7 @@ resource "aws_instance" "ec2_mongodb-shard2" {
   }
 }
 
-locals {                                                                    #.ec2.internal
+locals {
   shard1_private_dns = replace(aws_instance.ec2_mongodb-shard1.private_dns, ".ec2.internal", "")
   shard2_private_dns = replace(aws_instance.ec2_mongodb-shard2.private_dns, ".ec2.internal", "")
 }
