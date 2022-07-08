@@ -211,6 +211,9 @@ resource "aws_instance" "ec2_mongodb-router" {
   ]
 }
 
+resource "aws_instance" "ec2_grafana" {
+}
+
 // MongoDB config
 
 output "mongodb-config_public_dns" {
